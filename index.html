@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Monitoramento Upx</title>
+</head>
+<body>
+    <header>
+        <h1>Monitoramento funcionamento ESP32</h1>
+    </header>
+    <main>
+        <div name="input">
+            <label for="canal">Canal ESP:</label>
+            <input type="text" name="canal" id="canal">
+            <label for="hortalicas">Selecione a Hortaliça cultivada</label>
+            <select name="hortalicas" id="hortalicas">
+                <option value="1">Tomate Cereja</option>
+                <option value="2">Alface</option>
+                <option value="3">Pimenta do Reino</option>
+            </select>
+            <button id="funcAll">Enviar</button>
+        </div>
+        <br>
+        <div name="output">
+            <h2>Esp n° <span id="espR"> </span>:</h2>
+            <h3>Umidade no vaso: <span id="humidity"> </span>%</h3>
+            <h3>Range umidade ideal para hortaliça selecionada: <span id="exp-humidity"> </span>%</h3>
+            <h3>Temperatura no ambiente: <span id="temp"> </span>°</h3>
+            <h4 id="ans"> </h4>
+        </div>
+    </main>
+</body>
+</html>
