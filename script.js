@@ -1,8 +1,12 @@
 /*
+canal teste: 1743428
 Tomate cereja 60 - 80
 Alface 60 - 80
 Pimenta do reino 80 - 88
  */
+divOut = document.getElementById("output")
+divOut.style.display = "none"
+
 document.getElementById("funcAll").addEventListener('click', async(e)=>{
     e.preventDefault()
     let numeroEsp = document.getElementById("canal").value
@@ -19,18 +23,30 @@ document.getElementById("funcAll").addEventListener('click', async(e)=>{
         }
         else
         {
+            divOut.style.display = "block"
             document.getElementById("humidity").innerText = `${data.field1}`
             document.getElementById("temp").innerText = `${data.field2}`
         }
 
+        icone = document.getElementById("icon")
         planta = document.querySelector("#hortalicas").value
         if(planta == 1 || planta == 2)
         {
             document.getElementById("exp-humidity").innerText = "60 - 80"
             if(data.field1 < 60)
+            {
                 document.getElementById("ans").innerText = "Sua planta encontra-se com umidade menor que a esperada"
+                icone.classList.remove("fa-check")
+                icone.classList.add("fa-solid", "fa-exclamation", "fa-beat", "fa-2xl")
+                icone.style.color = '#ff0000'
+            }
             else
+            {
                 document.getElementById("ans").innerText = "Sua planta encontra-se com umidade maior ou igual a esperada"
+                icone.classList.remove("fa-exclamation")
+                icone.classList.add("fa-solid", "fa-check", "fa-beat", "fa-2xl")
+                icone.style.color = '#25e40c'
+            }
         }
         else if(planta == 3)
         {
@@ -38,9 +54,17 @@ document.getElementById("funcAll").addEventListener('click', async(e)=>{
             if(data.field1 < 80)
             {
                 document.getElementById("ans").innerText = "Sua planta encontra-se com umidade menor que a esperada"
+                icone.classList.remove("fa-check")
+                icone.classList.add("fa-solid", "fa-exclamation", "fa-beat", "fa-2xl")
+                icone.style.color = '#ff0000'
             }
             else
+            {
                 document.getElementById("ans").innerText = "Sua planta encontra-se com umidade maior ou igual a esperada"
+                icone.classList.remove("fa-exclamation")
+                icone.classList.add("fa-solid", "fa-check", "fa-beat", "fa-2xl")
+                icone.style.color = '#25e40c'
+            }
         }
     }
     else

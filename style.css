@@ -1,0 +1,67 @@
+body{
+    flex-wrap: wrap;
+    background-color: beige;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    padding: 0.5%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label, input, button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+select{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+h2, h3, h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.butao{
+    padding: 0.6%;
+    color: black;
+    background-color: beige;
+    border:none;
+    border-radius: 25%;
+}
+
+.butao:hover{
+    padding: 0.6%;
+    background-color: black;
+    color: beige;
+    border: none;
+    transition: all 0.2s ease-in;
+    transition-delay: 0.05s;
+}
+
+.entrada{
+    text-align: center;
+    align-content: center;
+}
+
+#answer{
+    display: inline-flex;
+}
+
+#icon{
+    margin-top: 24px;
+    padding: 0%;
+}

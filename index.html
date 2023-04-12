@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/07df5e0d9a.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Monitoramento Upx</title>
 </head>
 <body>
@@ -12,25 +14,33 @@
         <h1>Monitoramento funcionamento ESP32</h1>
     </header>
     <main>
-        <div name="input">
+        <br>
+        <div class="entrada" id="entrada">
             <label for="canal">Canal ESP:</label>
             <input type="text" name="canal" id="canal">
             <label for="hortalicas">Selecione a Hortaliça cultivada</label>
             <select name="hortalicas" id="hortalicas">
+                <option selected disabled>Selecione uma hortaliça</option>
                 <option value="1">Tomate Cereja</option>
                 <option value="2">Alface</option>
                 <option value="3">Pimenta do Reino</option>
             </select>
-            <button id="funcAll">Enviar</button>
+            <button id="funcAll" class="butao"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
         </div>
         <br>
-        <div name="output">
-            <h2>Esp n° <span id="espR"> </span>:</h2>
+        <div name="output" id="output">
+            <h2>Esp n° <span id="espR"> </span></h2>
             <h3>Umidade no vaso: <span id="humidity"> </span>%</h3>
             <h3>Range umidade ideal para hortaliça selecionada: <span id="exp-humidity"> </span>%</h3>
             <h3>Temperatura no ambiente: <span id="temp"> </span>°</h3>
-            <h4 id="ans"> </h4>
+            <div id="answer">
+                <h4 id="ans" style="text-align: center;"> </h4>
+                <i id="icon"></i>
+            </div>
         </div>
     </main>
+    <footer>
+        <h5>Equipe 5 Upx-3</h5>
+    </footer>
 </body>
 </html>
