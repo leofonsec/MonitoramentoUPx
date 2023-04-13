@@ -86,5 +86,5 @@ footer{
 }
 
 .form-c:focus{
-    border: 3px solid black;
+    border: 3px solid rgb(36, 36, 36);
 }
