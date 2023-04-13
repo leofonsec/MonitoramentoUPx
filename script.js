@@ -7,6 +7,11 @@ Pimenta do reino 80 - 88
 divOut = document.getElementById("output")
 divOut.style.display = "none"
 
+imagem = document.getElementById("logo")
+imagem.src = 'https://mlogu6g7z5ex.i.optimole.com/cb:RF8R~518a6/w:500/h:159/q:90/https://facens.br/wp-content/uploads/2021/03/logo-f-b.png'
+imagem.style.width = 30 + "%"
+
+/*Funçao async p procurar o canal no thingspeak*/
 document.getElementById("funcAll").addEventListener('click', async(e)=>{
     e.preventDefault()
     let numeroEsp = document.getElementById("canal").value

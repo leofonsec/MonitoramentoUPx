@@ -1,9 +1,10 @@
 body{
     flex-wrap: wrap;
-    background-color: beige;
+    background-color: #e3e3e3;
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -13,32 +14,25 @@ header{
     text-align: center;
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 label, input, button{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 8px;
     margin-left: 8px;
     font-weight: bold;
 }
 
 select{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 8px;
     margin-left: 8px;
 }
 
 h2, h3, h4{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 15px;
 }
 
 .butao{
     padding: 0.6%;
     color: black;
-    background-color: beige;
+    background-color: #e3e3e3;
     border:none;
     border-radius: 25%;
 }
@@ -46,7 +40,7 @@ h2, h3, h4{
 .butao:hover{
     padding: 0.6%;
     background-color: black;
-    color: beige;
+    color: #e3e3e3;
     border: none;
     transition: all 0.2s ease-in;
     transition-delay: 0.05s;
@@ -64,4 +58,33 @@ h2, h3, h4{
 #icon{
     margin-top: 24px;
     padding: 0%;
+}
+
+#output{
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 0.5%;
+    color: black;
+    background-color: aliceblue;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: aliceblue;
+    display: inline-flex;
+    width: 100%;
+}
+
+.form-c{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.form-c:focus{
+    border: 3px solid black;
 }
